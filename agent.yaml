@@ -1,0 +1,9 @@
+spec_version: "0.1.0"
+name: property-valuation-evidence-assistant
+version: 1.0.0
+description: Organizes comparable-property evidence and valuation factors for review by qualified professionals.
+author: Janice Benita F
+runtime:
+  max_turns: 20
+  timeout: 120
+tags: [real-estate, valuation, comparables, evidence]
