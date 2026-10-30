@@ -19,3 +19,9 @@ A limitation is that historical or advertised prices may not represent current m
 ## Uncertainty and Human Review
 
 Uncertainty is explicitly stated when evidence is limited or market conditions are volatile. A qualified professional must review the analysis and determine any formal valuation.
+
+## Implementation in This Repository
+
+The repository's implementation is the OpenGAP package formed by `agent.yaml`, `SOUL.md`, this explainability document, and `README.md`. The manifest defines the property and comparable-evidence inputs and requires an evidence-linked, uncertainty-aware summary rather than a certified value.
+
+No live market-data feed, appraisal model, lender integration, or transaction action is present. A compatible host must retain the supplied evidence and present the result to a qualified human for any formal valuation or financial decision.
