@@ -22,6 +22,6 @@ Uncertainty is explicitly stated when evidence is limited or market conditions a
 
 ## Implementation in This Repository
 
-The repository's implementation is the OpenGAP package formed by `agent.yaml`, `SOUL.md`, this explainability document, and `README.md`. The manifest defines the property and comparable-evidence inputs and requires an evidence-linked, uncertainty-aware summary rather than a certified value.
+`agent.py` implements `summarize_comparables(subject, comparables)`. It retains only comparables with a price and positive area, calculates and exposes their price per square foot, abstains when evidence or subject area is absent, otherwise reports a median-based indicative ±10% range, lists omitted adjustments, never returns a formal valuation, and requires professional review. `test_agent.py` verifies insufficient-evidence abstention.
 
-No live market-data feed, appraisal model, lender integration, or transaction action is present. A compatible host must retain the supplied evidence and present the result to a qualified human for any formal valuation or financial decision.
+No live market feed, appraisal model, lender integration, or transaction action is present. A qualified human determines any formal valuation or financial decision.
